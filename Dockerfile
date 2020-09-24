@@ -6,7 +6,7 @@ COPY ./requirements.txt /requirements.txt
 
 WORKDIR /
 
-RUN pip3 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
+RUN pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
 
 COPY . /
 
