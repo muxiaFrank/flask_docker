@@ -6,9 +6,11 @@ COPY ./requirements.txt /requirements.txt
 
 WORKDIR /
 
+COPY . /
+
+
 RUN pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
 
-COPY . /
 
 ENTRYPOINT [ "python" ]
 
