@@ -1,4 +1,4 @@
-FROM python3.8
+FROM python:3.8
 
 MAINTAINER muxia "dargons0207@163.com"
 
