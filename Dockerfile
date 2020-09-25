@@ -14,4 +14,4 @@ RUN pip3 install --upgrade pip
 
 RUN pip3 install -r requirements.txt  -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
-CMD [ "python","app.py" ]
+CMD [ "python3","app.py" ]
