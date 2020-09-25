@@ -22,4 +22,4 @@ RUN adduser --disabled-password --gecos '' nginx\
   && chmod 777 /run/ -R \
   && chmod 777 /root/ -R
 
-ENTRYPOINT [ "/bin/bash", "/entry-point.sh"]
+ENTRYPOINT [ "/bin/bash", "/app/entry-point.sh"]
