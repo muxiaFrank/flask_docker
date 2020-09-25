@@ -9,9 +9,9 @@ RUN apt-get update -y && \
 COPY ./requirements.txt /requirements.txt
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
-WORKDIR /app
+WORKDIR /
 
-COPY . /app
+COPY . /
 
 RUN pip3 install --upgrade pip
 
@@ -22,4 +22,4 @@ RUN adduser --disabled-password --gecos '' nginx\
   && chmod 777 /run/ -R \
   && chmod 777 /root/ -R
 
-ENTRYPOINT [ "/bin/bash", "/app/entry-point.sh"]
+ENTRYPOINT [ "/bin/bash", "/entry-point.sh"]
